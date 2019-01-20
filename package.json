@@ -1,0 +1,11 @@
+{
+  "name": "pubmed-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "gerrit.schrader@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "sax": "^1.2.4"
+  }
+}
