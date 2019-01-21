@@ -1,8 +1,8 @@
 {
   "name": "pubmed-js",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "gerrit.schrader@gmail.com",
+  "main": "xml2json.js",
+  "author": "gerrit.schrader@infint-services.de",
   "license": "MIT",
   "dependencies": {
     "fs": "^0.0.1-security",

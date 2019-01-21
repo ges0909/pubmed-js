@@ -10,7 +10,7 @@ saxStream.on('error', function(error) {
 
 saxStream.on('text', function(text) {
   // if (text && text !== "") console.log(text)
-  stdout(text)
+  // stdout(text)
 })
 
 saxStream.on('opentag', function(tag) {
@@ -19,14 +19,14 @@ saxStream.on('opentag', function(tag) {
 })
 
 saxStream.on('closetag', function(tagName) {
-  stdout(tagName)
+  // stdout(tagName)
 })
 
 saxStream.on('attribute', function(attr) {})
 
 saxStream.on('end', function() {
   // parser stream is done, and ready to have more stuff written to it
-  stdout('The End.')
+  // stdout('The End.')
 })
 
 saxStream.on('comment', function(comment) {})
@@ -36,7 +36,7 @@ saxStream.on('cdata', function(data) {})
 saxStream.on('doctype', function(text) {})
 
 // pipe is supported, and it's readable/writable, same chunks coming in also go out
-fs.createReadStream('in/pubmed-short.xml').pipe(saxStream)
+fs.createReadStream('data/pubmed-short.xml').pipe(saxStream)
 
 function stdout(text) {
   process.stdout.write(text + '\n')
